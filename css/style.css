@@ -1,0 +1,344 @@
+html {
+  font-size: 20px;
+}
+body {
+  font-family: 'Viaoda Libre', cursive, 'Caveat', cursive, 'Noto Serif JP', serif, 'Indie Flower', 'Caveat';
+}
+header {
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 100;
+}
+.header-in {
+  padding: 10px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+.header-logo img {
+  width: 30%;
+  height: auto;
+  
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-item a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: gray;
+}
+.bg-img-bn {
+  background-image: url(../img/top.png);
+  width: 100%;
+  height: 80vh;
+  padding-top: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-tl {
+  margin: 100px 0px 100px 0px;
+}
+.row {
+  text-align: center;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  object-fit: cover;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 50%;
+  padding: 4px;
+}
+.row h2 {
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+.row p {
+  font-size: .7rem;
+}
+.row .btn {
+  width: 150px;
+  font-size: .8rem;
+  background-color: rgb(240, 122, 195, 0.3);
+  border: none;
+}
+.row .btn:hover {
+  color: brown;
+}
+.content {
+  margin: 0px 100px;
+}
+.about-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-img{
+  width: 40%;
+}
+.about-img img {
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  display: inline-block;
+}
+.plof-txt-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+}
+.plof-txt-right {
+  width: 30%;
+  position: relative;
+}
+.plof-txt-right::before {
+  width: calc(100% + 200px);
+  content: "";
+  position: absolute;
+  background-color: #f7b9b9;
+  height: calc(100% - 60px);
+  right: 0;
+  bottom: 100px;
+  z-index: -1;
+}
+.plof-txt {
+  line-height: 40px;
+}
+.plof-name {
+  font-weight: bold;
+}
+.plf-txt-left {
+  width: 30%;
+  position: relative;
+}
+.plf-txt-left::before {
+  width: calc(100% + 300px);
+  content: "";
+  position: absolute;
+  background-color: #f7d0d0;
+  height: 100%;
+  left: -80%;
+  right: 0;
+  z-index: -1;
+}
+.plof-txt p {
+  font-size: .7rem;
+}
+.plof-txt-p {
+  margin-top: 50%;
+}
+.bg-img-toy {
+  margin-top: 80px;
+  background-image: url(../img/bg-toys.png);
+  opacity: 0.6;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  }
+  .card-all {
+    display: flex;
+  }
+  .card {
+    width: 30%;
+    margin: 0 20px;
+    border-radius: 50%;
+    padding:0 20px;
+    border-right: 20px double rgb(252, 205, 119);
+    border-left: 20px double rgb(252, 205, 119);
+    border-top: none;
+    border-bottom: none;
+  }
+  .card-wrap {
+    text-align: center;
+    margin: 40px 0px;
+  }
+.fas {
+  color: rgb(252, 152, 22);
+  }
+  .card-wrap img {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .card-wrap img::before {
+    box-sizing: border-box;
+  }
+  .card-hr {
+    border: none;
+    height: 1px;
+    width: 30px;
+    background-color: dimgrey;
+  }
+  .contact-wrap {
+    text-align: center;
+  }
+  .contact-form {
+    background: rgb(250, 116, 194);
+    display: inline-block;
+    padding: 50px 300px;
+    margin-bottom: 100px;
+    border: 100px double white;
+  }
+  .contact-form p {
+    color: rgb(39, 39, 39)
+  }
+  .contact-submit {
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 30px;
+    margin: 5px;
+  }
+  .footer-img {
+    background-image: url(../img/footer.png);
+    width: 100%;
+    height:30vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .twitter {
+    text-align: center;
+    margin-left: -30%;
+  }
+  .fa-twitter {
+    color: rgb(153, 153, 153);
+  }
+  .fa-twitter:hover {
+    color: rgb(27, 27, 27);
+  }
+  .barder-sm {
+    margin: 0 auto;
+    border: 1px solid rgb(117, 117, 117);
+    margin-bottom: 40px;
+    width: 50%;
+
+  }
+  .footer-txt {
+    color: rgb(255, 253, 249);
+    position: absolute;
+    top: 50px;
+    left: 30%;
+  }
+
+@media screen and (max-width: 670px) {
+  /*メニュー部分*/
+  .nav-list {
+    flex-wrap: wrap;
+  }
+  .nav-item {
+    margin: 5px 0px;
+  }
+#ham-menu {
+  background-color: #fff; /*メニュー背景色*/
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 40px; /*メニュー内部上下左右余白*/
+  position: fixed;
+  right: -300px; /*メニュー横幅①と合わせる*/
+  top: 0;
+  transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 300px; /*メニュー横幅①*/
+  z-index: 1000;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+#ham-menu::before {
+  background-color: #fff; /*ボタン部分背景色*/
+  border-radius: 0 0 0 10px; /*左下角丸*/
+  color: #333; /*アイコン（フォント）色*/
+  content: "≡"; /*メニューアイコン*/
+  display: block;
+  font-size: 50px; /*アイコン（フォント）サイズ*/
+  height: 50px;
+  line-height: 50px; /*縦位置中央化*/
+  position: absolute;
+  right: 100%;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+/*透過背景部分*/
+#menu-background {
+  background-color: #333; /*黒背景部分背景色*/
+  display: block;
+  height: 100%;
+  opacity: 0;
+  /* position: fixed; */
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 100%;
+  z-index: -1;
+}
+
+/*hover 時の処理*/
+#ham-menu:hover {
+  transform: translate(-300px); /*メニュー横幅①と合わせる*/
+}
+
+#ham-menu:hover + #menu-background {
+  opacity: 0.5; /*黒背景部分透過度*/
+  z-index: 999;
+}
+.about-img {
+  width: 90%;
+}
+.plof-txt-all {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.plof-txt-right {
+  width: 50%;
+}
+.plof-txt-right::before {
+  width: calc(100% + 100px);
+  height:100%;
+  right: 0;
+  bottom: 200px;
+  z-index: -1;
+ }
+ .plf-txt-left {
+  width: 50%;
+}
+.plf-txt-left::before {
+  width: calc(100% + 160px);
+  height: 100%;
+  top: 30px;
+  left: -30%;
+  right: 0;
+  z-index: -1;
+}
+.card-all {
+  flex-direction: column;
+}
+.card {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.contact-form {
+  padding: 10px 10px;
+  margin-left: -90px;
+}
+}
