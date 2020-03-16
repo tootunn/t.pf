@@ -117,6 +117,7 @@ header {
   height: calc(100% - 60px);
   right: 0;
   bottom: 100px;
+  border-radius: 50%;
   z-index: -1;
 }
 .plof-txt {
@@ -137,6 +138,7 @@ header {
   height: 100%;
   left: -80%;
   right: 0;
+  border-radius: 50%;
   z-index: -1;
 }
 .plof-txt p {
@@ -164,8 +166,8 @@ header {
     margin: 0 20px;
     border-radius: 50%;
     padding:0 20px;
-    border-right: 20px double rgb(252, 205, 119);
-    border-left: 20px double rgb(252, 205, 119);
+    border-right: 20px double rgb(250, 205, 224);
+    border-left: 20px double rgb(250, 205, 224);
     border-top: none;
     border-bottom: none;
   }
@@ -174,7 +176,7 @@ header {
     margin: 40px 0px;
   }
 .fas {
-  color: rgb(252, 152, 22);
+  color: rgb(190, 190, 190);
   }
   .card-wrap img {
     width: 60%;
@@ -194,11 +196,10 @@ header {
     text-align: center;
   }
   .contact-form {
-    background: rgb(250, 116, 194);
     display: inline-block;
     padding: 50px 300px;
     margin-bottom: 100px;
-    border: 100px double white;
+    border: 2px double rgb(250, 169, 226);
   }
   .contact-form p {
     color: rgb(39, 39, 39)
@@ -243,7 +244,7 @@ header {
     left: 30%;
   }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 768px) {
   /*メニュー部分*/
   .nav-list {
     flex-wrap: wrap;
@@ -306,42 +307,46 @@ header {
 }
 .about-img {
   width: 90%;
+  margin: 0 auto;
 }
 .plof-txt-all {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.plof-txt-right{
   width: 100%;
 }
-.plof-txt-right {
-  width: 50%;
-}
 .plof-txt-right::before {
-  width: calc(100% + 100px);
+  width: 100%;
   height:100%;
-  right: 0;
-  bottom: 200px;
+  bottom: 1px;
   z-index: -1;
  }
- .plf-txt-left {
-  width: 50%;
+ .plof-txt-p {
+  margin-top: 20px;
 }
+ .plf-txt-left {
+   width: 100%;
+ }
 .plf-txt-left::before {
-  width: calc(100% + 160px);
-  height: 100%;
-  top: 30px;
-  left: -30%;
-  right: 0;
+  width: 100%;
+  height:100%;
+  bottom: 1px;
+  left: 0;
   z-index: -1;
 }
 .card-all {
   flex-direction: column;
 }
 .card {
-  width: 100%;
-  margin-bottom: 50px;
+  width: 80%;
+  margin: 20px auto;
 }
 .contact-form {
   padding: 10px 10px;
-  margin-left: -90px;
+}
+.content {
+  margin: 0;
 }
 }
